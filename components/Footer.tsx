@@ -10,12 +10,11 @@ export const Footer: React.FC = () => {
     <footer className="bg-petro-dark text-white pt-16 pb-8 relative">
       <div className="container mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
-          
+
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex flex-col">
-              <span className="font-display font-extrabold text-2xl tracking-tight leading-none">SANDPETRO</span>
-              <span className="text-xs font-bold tracking-widest uppercase text-sand opacity-90">Contracting & Trading</span>
+              <img src="/images/Screenshot 2026-01-19 235223.png" alt="SandPetro Logo" className="h-16 w-auto object-contain mb-2" />
             </div>
             <p className="text-gray-400 text-sm leading-relaxed">
               Shaping the future of Saudi Arabia through industrial excellence and innovation. Trusted partner for Vision 2030.
@@ -74,7 +73,7 @@ export const Footer: React.FC = () => {
         </div>
       </div>
 
-      <button 
+      <button
         onClick={scrollToTop}
         className="absolute bottom-8 right-8 bg-sand text-white p-3 shadow-lg hover:bg-white hover:text-petro transition-all duration-300 group"
         aria-label="Scroll to top"
