@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Linkedin, Twitter, ArrowUp } from 'lucide-react';
 
 export const Footer: React.FC = () => {
@@ -12,11 +13,9 @@ export const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
 
           {/* Brand */}
-          <div className="space-y-4">
-            <div className="flex flex-col">
-              <img src="/images/Screenshot 2026-01-19 235223.png" alt="SandPetro Logo" className="h-16 w-auto object-contain mb-2" />
-            </div>
-            <p className="text-gray-400 text-sm leading-relaxed">
+          <div className="space-y-4 flex flex-col items-start">
+            <img src="/images/Screenshot 2026-01-19 235223.png" alt="SandPetro Logo" className="h-16 w-auto object-contain mb-2" />
+            <p className="text-gray-400 text-sm leading-relaxed text-justify">
               Shaping the future of Saudi Arabia through industrial excellence and innovation. Trusted partner for Vision 2030.
             </p>
             <div className="flex space-x-4 pt-2">
@@ -33,9 +32,9 @@ export const Footer: React.FC = () => {
           <div>
             <h4 className="font-display font-bold text-lg mb-6">Quick Links</h4>
             <ul className="space-y-3 text-sm text-gray-400">
-              <li><a href="#about" className="hover:text-sand transition-colors">About Us</a></li>
-              <li><a href="#services" className="hover:text-sand transition-colors">Our Services</a></li>
-              <li><a href="#projects" className="hover:text-sand transition-colors">Projects Portfolio</a></li>
+              <li><Link to="/about" className="hover:text-sand transition-colors">About Us</Link></li>
+              <li><a href="/#services" className="hover:text-sand transition-colors">Our Services</a></li>
+              <li><Link to="/projects" className="hover:text-sand transition-colors">Projects Portfolio</Link></li>
               <li><a href="#contact" className="hover:text-sand transition-colors">Get a Quote</a></li>
               <li><a href="#" className="hover:text-sand transition-colors">Careers</a></li>
             </ul>
@@ -58,8 +57,8 @@ export const Footer: React.FC = () => {
             <h4 className="font-display font-bold text-lg mb-6">Contact</h4>
             <ul className="space-y-3 text-sm text-gray-400">
               <li>Al Khobar, Saudi Arabia</li>
-              <li>info@sandpetro.com</li>
-              <li>+966 55 014 3746</li>
+              <li><a href="mailto:info@sandpetro.com" className="hover:text-sand">info@sandpetro.com</a></li>
+              <li><a href="https://wa.me/966550143746" target="_blank" rel="noopener noreferrer" className="hover:text-sand">+966 55 014 3746</a></li>
             </ul>
           </div>
         </div>
@@ -69,6 +68,8 @@ export const Footer: React.FC = () => {
           <div className="mt-4 md:mt-0 space-x-6">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
+            <span className="text-gray-600">|</span>
+            <span className="hover:text-white transition-colors">designed by <a href="https://tradmak.com/#/digital-experience" target="_blank" rel="noopener noreferrer" className="text-sand hover:underline">tradmak</a></span>
           </div>
         </div>
       </div>
