@@ -27,7 +27,7 @@ export const Projects: React.FC = () => {
       location: 'Al Madinah / Al Mahd',
       category: 'Infrastructure',
       description: 'Comprehensive fabrication works for water lines, supporting essential municipal water distribution networks.',
-      imageUrl: 'https://images.unsplash.com/photo-1590486803833-1c5dc8ce2ac6?q=80&w=1935&auto=format&fit=crop'
+      imageUrl: 'https://images.unsplash.com/photo-1756973584844-ae528fadd2c2?q=80&w=2070&auto=format&fit=crop'
     }
   ];
 
