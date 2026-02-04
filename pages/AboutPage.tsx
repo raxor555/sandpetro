@@ -26,14 +26,16 @@ export const AboutPage: React.FC = () => {
     };
 
     const portfolio = [
-        { name: 'Al Shurooq Al Dhahabi Restaurants', location: 'Al Khobar', role: 'Owner & Manager', desc: 'A leading chain specializing in authentic popular Saudi cuisine in the Eastern Province for over 35 years.' },
-        { name: 'Shawaya Al Hijaz Restaurants', location: 'Western Region', role: 'Chairman of the Board', desc: 'Renowned chain delivering distinctive meals with modern operations.' },
+        { name: 'Dar Al Mubarak Trading', location: 'Kingdom of Bahrain', role: 'Board Member', desc: 'Leading firm in gold refining and precious metals trading.' },
+        { name: 'Gulf Rock Petroleum & Services', location: 'KSA', role: 'Partner', desc: 'Specialized in oil, gas, and water exploration, fabrication of rig support equipment, and technical services.' },
+        { name: 'Mechanical Fabrication', location: 'KSA', role: 'Core Service', desc: 'Fabricating all types of Rig support equipment, oil tool baskets, storage tanks, and structural platforms.' },
         { name: 'Al Hijaz for Animal Feed', location: 'Rabigh', role: 'Owner & Chairman', desc: 'Specializes in import/export of high-quality animal feed.' },
         { name: 'Al Safa Feed Factory', location: 'Western Region', role: 'Owner', desc: 'Focused on classification and distribution of premium animal feed.' },
         { name: 'Ardh Al Khair Logistics Services', location: 'KSA', role: 'Board Member', desc: 'Provides integrated logistics solutions across the Kingdom.' },
         { name: 'Daleel Muhit Al Bihar Company', location: 'KSA', role: 'Chairman of the Board', desc: 'Specializes in trading, importing, and exporting various meats with strict quality and food safety standards.' },
-        { name: 'Dar Al Mubarak Trading', location: 'Kingdom of Bahrain', role: 'Board Member', desc: 'Leading firm in gold refining and precious metals trading.' },
         { name: 'International Investments', location: 'Egypt & Sudan', role: 'Partner and Chairman', desc: 'Feed manufacturing (Egypt) and Yaksoon Mining Company (gold mining, Sudan).' },
+        { name: 'Al Shurooq Al Dhahabi Restaurants', location: 'Al Khobar', role: 'Owner & Manager', desc: 'A leading chain specializing in authentic popular Saudi cuisine in the Eastern Province for over 35 years.' },
+        { name: 'Shawaya Al Hijaz Restaurants', location: 'Western Region', role: 'Chairman of the Board', desc: 'Renowned chain delivering distinctive meals with modern operations.' },
     ];
 
     return (
@@ -46,7 +48,7 @@ export const AboutPage: React.FC = () => {
                 <div className="container mx-auto px-6 relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-8">
                     <div>
                         <h1 className="text-4xl md:text-5xl font-display font-bold mb-4">About Us</h1>
-                        <p className="text-xl text-sand font-medium max-w-2xl">Sandpetro Contracting & Trading Company — Delivering world-class solutions since 2008.</p>
+                        <p className="text-xl text-sand font-medium max-w-2xl">Sandpetro Contracting & Trading Company — Delivering world-class solutions since 2002.</p>
                     </div>
                     <div>
                         <button
@@ -95,7 +97,7 @@ export const AboutPage: React.FC = () => {
                                     required
                                     type="tel"
                                     className="w-full bg-slate-50 border border-gray-200 p-3 text-sm focus:outline-none focus:border-sand focus:ring-1 focus:ring-sand transition-all"
-                                    placeholder="+966 50 000 0000"
+                                    placeholder="+965 50 143 746"
                                     value={formData.phone}
                                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                                 />
@@ -129,7 +131,7 @@ export const AboutPage: React.FC = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     <div className="space-y-6">
                         <p className="text-lg text-slate-700 leading-relaxed text-justify">
-                            Formed in 2008, Sandpetro Contracting & Trading Company is a forward-looking construction, industrial contracting, and trading firm established by a team of experienced industry professionals and qualified engineers with a vision to deliver integrated, world-class solutions.
+                            Formed in 2002, Sandpetro Contracting & Trading Company is a forward-looking construction, industrial contracting, and trading firm established by a team of experienced industry professionals and qualified engineers with a vision to deliver integrated, world-class solutions.
                         </p>
                         <p className="text-slate-600 leading-relaxed text-justify">
                             With operations centered in the Kingdom of Saudi Arabia, we provide a wide array of services spanning general contracting for industrial, residential, and commercial projects. Our specializations include Building Automation & Maintenance, HDPE Contracting, Landscape, Asphalt Works, Dismantling & Waste Management, and Prefabrication.
@@ -194,7 +196,7 @@ export const AboutPage: React.FC = () => {
                                         A pioneering Saudi businessman with extensive experience in managing large-scale companies and strategic projects, Mr. Khaled Al Harbi excels in leading teams and forging effective local and international partnerships. His studied investment approach, ability to seize opportunities, and passion for sustainable growth have established him as a prominent figure in contracting, food services, and mining sectors. Since the inception of his career, he has been driven by a philosophy of continuous improvement and a refusal to accept the status quo, pushing the boundaries of what is possible in the Saudi Arabian industrial landscape.
                                     </p>
                                     <p>
-                                        As the sole owner and Chairman of the Board of Sandpetro Contracting & Trading Company (established 1430H / 2008), he has guided the firm to execute major projects, including collaborations with Saudi Aramco, barley processing facilities for Al Muhaidib Group, and government contracts with the Ministry of Defense and King Abdulaziz Naval Base in Jubail. Under his direct oversight, Sandpetro has achieved record-breaking safety milestones and consistently exceeded client expectations for technical complexity and delivery speed.
+                                        As the sole owner and Chairman of the Board of Sandpetro Contracting & Trading Company (established 1422H / 2002), he has guided the firm to execute major projects, including collaborations with Saudi Aramco, barley processing facilities for Al Muhaidib Group, and government contracts with the Ministry of Defense and King Abdulaziz Naval Base in Jubail. Under his direct oversight, Sandpetro has achieved record-breaking safety milestones and consistently exceeded client expectations for technical complexity and delivery speed.
                                     </p>
                                     <p>
                                         His broader portfolio demonstrates diversified expertise and commitment to economic development, spanning across various sectors from restaurants to logistics and international mining. Mr. Al Harbi's strategic investments are meticulously designed to foster long-term stability and create high-value employment opportunities within the Kingdom, directly supporting the ambitious goals of the National Transformation Program.
@@ -240,7 +242,7 @@ export const AboutPage: React.FC = () => {
                         <div className="space-y-4">
                             <div className="flex items-center text-slate-600">
                                 <Phone className="w-5 h-5 text-sand mr-4" />
-                                <span>+966 55 584 6194</span>
+                                <span>+965 50 143 746</span>
                             </div>
                             <div className="flex items-center text-slate-600">
                                 <Mail className="w-5 h-5 text-sand mr-4" />

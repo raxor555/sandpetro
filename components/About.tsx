@@ -4,16 +4,16 @@ import { Section } from './ui/Section';
 
 export const About: React.FC = () => {
   const stats = [
-    { label: 'Years of Excellence', value: '16+' },
+    { label: 'Years of Excellence', value: '24+' },
     { label: 'Major Clients', value: '50+' },
     { label: 'Completed Projects', value: '200+' },
     { label: 'Skilled Workforce', value: '500+' },
   ];
 
   return (
-    <Section id="about" title="Engineering Excellence Since 2008" subtitle="Who We Are">
+    <Section id="about" title="Engineering Excellence Since 2002" subtitle="Who We Are">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-        
+
         {/* Content Column */}
         <div className="space-y-8">
           <p className="text-lg text-slate-600 leading-relaxed">
@@ -33,7 +33,7 @@ export const About: React.FC = () => {
                 To be a trusted leader in delivering comprehensive services across KSA, setting benchmarks for innovation and national development.
               </p>
             </div>
-            
+
             <div className="bg-slate-50 p-6 border-l-4 border-petro shadow-sm hover:shadow-md transition-shadow">
               <div className="flex items-center mb-3">
                 <Lightbulb className="w-6 h-6 text-sand mr-3" />
@@ -49,15 +49,15 @@ export const About: React.FC = () => {
         {/* Image/Stats Column */}
         <div className="relative">
           <div className="relative z-10 rounded-sm overflow-hidden shadow-2xl">
-            <img 
-              src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=2070&auto=format&fit=crop" 
-              alt="Engineers discussing blueprints" 
+            <img
+              src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=2070&auto=format&fit=crop"
+              alt="Engineers discussing blueprints"
               className="w-full h-auto object-cover"
             />
             {/* Overlay Gradient */}
             <div className="absolute inset-0 bg-petro/20"></div>
           </div>
-          
+
           {/* Decorative Elements */}
           <div className="absolute -top-6 -right-6 w-32 h-32 bg-sand/20 z-0"></div>
           <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-petro/10 z-0"></div>

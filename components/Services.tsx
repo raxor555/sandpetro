@@ -1,11 +1,12 @@
 import React from 'react';
-import { 
-  Hammer, 
-  Droplets, 
-  Cpu, 
-  Home, 
-  Truck, 
-  Users2 
+import {
+  Hammer,
+  Droplets,
+  Cpu,
+  Home,
+  Truck,
+  Users2,
+  Factory
 } from 'lucide-react';
 import { Section } from './ui/Section';
 import { Service } from '../types';
@@ -21,10 +22,17 @@ export const Services: React.FC = () => {
     },
     {
       id: 'hdpe',
-      title: 'HDPE & Waterproofing',
+      title: 'HDPE Waterproofing',
       description: 'Specialized containment solutions for Oil & Gas and Water Management. Expert geomembrane liners and extrusion welding.',
       icon: Droplets,
       features: ['Geomembrane Liners', 'Butt Fusion Welding', 'Wastewater Ponds', 'Chemical Containment']
+    },
+    {
+      id: 'fabrication',
+      title: 'Mechanical Fabrication',
+      description: 'Fabricating all types of Rig support equipment, oil tools, motor shipping baskets, and storage tanks (Horizontal & Vertical).',
+      icon: Factory,
+      features: ['Rig Support Equipment', 'Oil Tool Baskets', 'Storage & Mud Tanks', 'Pipe Spools & Structures']
     },
     {
       id: 'bms',
@@ -60,25 +68,25 @@ export const Services: React.FC = () => {
     <Section id="services" title="Integrated Industrial Solutions" subtitle="Our Expertise" dark>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {services.map((service) => (
-          <div 
+          <div
             key={service.id}
             className="group bg-white p-8 border border-gray-100 hover:border-sand/50 shadow-sm hover:shadow-xl transition-all duration-300 relative overflow-hidden"
           >
             {/* Top accent bar */}
             <div className="absolute top-0 left-0 w-full h-1 bg-gray-100 group-hover:bg-sand transition-colors duration-300"></div>
-            
+
             <div className="mb-6 inline-flex p-3 bg-petro/5 group-hover:bg-petro text-petro group-hover:text-white rounded-sm transition-colors duration-300">
               <service.icon className="w-8 h-8" />
             </div>
-            
+
             <h3 className="text-xl font-display font-bold text-petro mb-3 group-hover:text-sand transition-colors">
               {service.title}
             </h3>
-            
+
             <p className="text-slate-600 mb-6 text-sm leading-relaxed">
               {service.description}
             </p>
-            
+
             <ul className="space-y-2 mb-6">
               {service.features.map((feature, idx) => (
                 <li key={idx} className="flex items-center text-xs font-medium text-slate-500">

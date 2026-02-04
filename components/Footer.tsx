@@ -45,7 +45,8 @@ export const Footer: React.FC = () => {
             <h4 className="font-display font-bold text-lg mb-6">Core Services</h4>
             <ul className="space-y-3 text-sm text-gray-400">
               <li>General Contracting</li>
-              <li>HDPE & Waterproofing</li>
+              <li>HDPE Waterproofing</li>
+              <li>Mechanical Fabrication</li>
               <li>BMS Solutions</li>
               <li>Prefab Buildings</li>
               <li>Heavy Equipment Rental</li>
@@ -58,7 +59,7 @@ export const Footer: React.FC = () => {
             <ul className="space-y-3 text-sm text-gray-400">
               <li>Al Khobar, Saudi Arabia</li>
               <li><a href="mailto:info@sandpetro.com" className="hover:text-sand">info@sandpetro.com</a></li>
-              <li><a href="https://wa.me/966550143746" target="_blank" rel="noopener noreferrer" className="hover:text-sand">+966 55 014 3746</a></li>
+              <li><a href="https://wa.me/96550143746" target="_blank" rel="noopener noreferrer" className="hover:text-sand">+965 50 143 746</a></li>
             </ul>
           </div>
         </div>

@@ -7,13 +7,13 @@ export const Contact: React.FC = () => {
   return (
     <Section id="contact" title="Get in Touch" subtitle="Contact Us">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-        
+
         {/* Contact Info */}
         <div className="space-y-8">
           <p className="text-slate-600 mb-8">
             Whether you need a quote for a large-scale contracting project, equipment rental, or specialized HDPE solutions, our team is ready to assist you.
           </p>
-          
+
           <div className="space-y-6">
             <div className="flex items-start">
               <div className="bg-petro/10 p-3 rounded-sm mr-4 text-petro">
@@ -36,8 +36,7 @@ export const Contact: React.FC = () => {
               <div>
                 <h4 className="font-display font-bold text-petro text-lg mb-1">Phone</h4>
                 <p className="text-slate-600 text-sm">
-                  <a href="tel:+966550143746" className="hover:text-sand block">+966 55 014 3746</a>
-                  <a href="tel:+966555846194" className="hover:text-sand block">+966 55 584 6194</a>
+                  <a href="tel:+96550143746" className="hover:text-sand block">+965 50 143 746</a>
                 </p>
               </div>
             </div>
@@ -84,7 +83,7 @@ export const Contact: React.FC = () => {
                 <input type="text" id="company" className="w-full bg-slate-50 border border-gray-300 p-3 text-sm focus:outline-none focus:border-sand focus:ring-1 focus:ring-sand" placeholder="Company Name" />
               </div>
             </div>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
                 <label htmlFor="email" className="block text-xs font-bold uppercase text-slate-500 mb-1">Email Address</label>
@@ -92,7 +91,7 @@ export const Contact: React.FC = () => {
               </div>
               <div>
                 <label htmlFor="phone" className="block text-xs font-bold uppercase text-slate-500 mb-1">Phone Number</label>
-                <input type="tel" id="phone" className="w-full bg-slate-50 border border-gray-300 p-3 text-sm focus:outline-none focus:border-sand focus:ring-1 focus:ring-sand" placeholder="+966 50 000 0000" />
+                <input type="tel" id="phone" className="w-full bg-slate-50 border border-gray-300 p-3 text-sm focus:outline-none focus:border-sand focus:ring-1 focus:ring-sand" placeholder="+965 50 143 746" />
               </div>
             </div>
 
@@ -100,7 +99,8 @@ export const Contact: React.FC = () => {
               <label htmlFor="service" className="block text-xs font-bold uppercase text-slate-500 mb-1">Interested Service</label>
               <select id="service" className="w-full bg-slate-50 border border-gray-300 p-3 text-sm focus:outline-none focus:border-sand focus:ring-1 focus:ring-sand">
                 <option>General Contracting</option>
-                <option>HDPE & Waterproofing</option>
+                <option>HDPE Waterproofing</option>
+                <option>Mechanical Fabrication</option>
                 <option>Building Management Systems</option>
                 <option>Prefab & Portable Buildings</option>
                 <option>Trading & Rental</option>
